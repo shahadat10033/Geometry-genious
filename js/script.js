@@ -95,7 +95,7 @@ document.getElementById("btn-rhombus-calculate").addEventListener("click",functi
     const innerRhombusD1=parseInt(getInputInnerText("innerRhombusD1" ));
     
     const innerRhombusD2 =parseInt(getInputInnerText("innerRhombusD2"));
-    const RhombusArea= (innerRhombusD1*innerRhombusD1);
+    const RhombusArea= (0.5*innerRhombusD1*innerRhombusD1);
     
    const  areaResultField=getInputId("area-result-field");
     if(RhombusArea<0 ){
@@ -111,3 +111,28 @@ document.getElementById("btn-rhombus-calculate").addEventListener("click",functi
 })
 
 // -------------------------------------Rhombus part Ends------------------------------------------------------
+
+// -------------------------------------Pentagon part starts------------------------------------------------------
+
+
+document.getElementById("btn-pentagon-calculate").addEventListener("click",function(){
+
+  
+    const innerPentagonP=parseInt(getInputInnerText("innerPentagonP" ));
+    
+    const innerPentagonB=parseInt(getInputInnerText("innerPentagonB"));
+    const PentagonArea= (0.5*innerPentagonP*innerPentagonB);
+    
+   const  areaResultField=getInputId("area-result-field");
+    if( PentagonArea<0 ){
+        alert("plz type a valid number");
+    }
+    else{ let li=document.createElement("li");
+    li.classList.add("list-group-item")
+    li.innerHTML=`  Pentagon     A = ${ PentagonArea }  cm<sup>2</sup> <button class="btn btn-primary">convert to m<sup>2</sup></button>`
+ 
+     areaResultField.appendChild( li )}
+  
+
+})
+// -------------------------------------Pentagon part Ends------------------------------------------------------
