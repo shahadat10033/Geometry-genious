@@ -161,3 +161,17 @@ document.getElementById("btn-ellipse-calculate").addEventListener("click",functi
 })
 
 // -------------------------------------Ellipse part ends-----------------------------------------------------
+
+// -------------------------------random color section -----------------------------------------------------
+const randomColorCards = document.getElementsByClassName("randomColor");
+
+    function randomcolor() {
+        return Math.floor(Math.random() * 255);
+    }
+    for(let card of randomColorCards){
+        card.addEventListener('mouseenter', function ()  {
+            card.style.backgroundColor = 'rgba(' 
+                + randomcolor() + ',' + randomcolor() 
+                + ',' + randomcolor() + '\)'
+        })
+    }  
