@@ -175,3 +175,4 @@ const randomColorCards = document.getElementsByClassName("randomColor");
                 + ',' + randomcolor() + '\)'
         })
     }  
+// -------------------------------random color section -----------------------------------------------------
