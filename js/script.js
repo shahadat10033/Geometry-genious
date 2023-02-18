@@ -136,3 +136,28 @@ document.getElementById("btn-pentagon-calculate").addEventListener("click",funct
 
 })
 // -------------------------------------Pentagon part Ends------------------------------------------------------
+
+
+// -------------------------------------Ellipse part starts-----------------------------------------------------
+document.getElementById("btn-ellipse-calculate").addEventListener("click",function(){
+
+  
+    const innerEllipseA=parseInt(getInputInnerText("innerEllipseA" ));
+    
+    const innerEllipseB=parseInt(getInputInnerText("innerEllipseB"));
+    const EllipseArea= (3.1416*innerEllipseA*innerEllipseB).toFixed(2);
+    
+   const  areaResultField=getInputId("area-result-field");
+    if(EllipseArea<0 ){
+        alert("plz type a valid number");
+    }
+    else{ let li=document.createElement("li");
+    li.classList.add("list-group-item")
+    li.innerHTML=`  Ellipse     A = ${ EllipseArea }  cm<sup>2</sup> <button class="btn btn-primary">convert to m<sup>2</sup></button>`
+ 
+     areaResultField.appendChild( li )}
+  
+
+})
+
+// -------------------------------------Ellipse part ends-----------------------------------------------------
