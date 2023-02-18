@@ -44,13 +44,13 @@
                 <h5 class="card-title">Triangle</h5>
                 <p>Area (A) = 0.5 * b * h</p>
 
-                <input class="w-25" type="text" placeholder="b" />
+                <input class="w-25" type="text" placeholder="b" id="input-triangle-b" />
                 <span>cm</span>
 
-                <input class="w-25" type="text" placeholder="h" />
+                <input class="w-25" type="text" placeholder="h"  id="input-triangle-h"/>
                 <span>cm</span>
                 <div class="d-grid">
-                  <button class="btn btn-primary my-4" type="button">
+                  <button class="btn btn-primary my-4" type="button" id="btn-triangle-calculate">
                     Calculate
                   </button>
                 </div>
@@ -75,7 +75,7 @@
                 <input class="w-25" type="text" placeholder="l" />
                 <span>cm</span>
                 <div class="d-grid">
-                  <button class="btn btn-primary my-5" type="button">
+                  <button class="btn btn-primary my-5" type="button" id="btn-rectangle-calculate">
                     Calculate
                   </button>
                 </div>
@@ -95,7 +95,7 @@
                 <p>Area (A) = b * h</p>
                 <p>b=<span> 10 </span> cm h=<span>12</span>cm</p>
                 <div class="d-grid">
-                  <button class="btn btn-primary my-5" type="button">
+                  <button class="btn btn-primary my-5" type="button"  id="btn-parallelogram-calculate">
                     Calculate
                   </button>
                 </div>
@@ -121,7 +121,7 @@
                   <span>8</span>cm
                 </p>
                 <div class="d-grid">
-                  <button class="btn btn-primary my-4" type="button">
+                  <button class="btn btn-primary my-4" type="button"  id="btn-rhombus-calculate">
                     Calculate
                   </button>
                 </div>
@@ -142,7 +142,7 @@
 
                 <p>p=<span> 6 </span> cm b=<span>10</span>cm</p>
                 <div class="d-grid">
-                  <button class="btn btn-primary mb-5" type="button">
+                  <button class="btn btn-primary mb-5" type="button"  id="btn-pentagon-calculate">
                     Calculate
                   </button>
                 </div>
@@ -179,10 +179,7 @@
             
             <div class="card-body ">
               <h5 class="card-title text-decoration-underline">Area Calculation</h5>
-           
-
-              
-                  
+              <ol id="area-result-field" class=" list-group list-group-numbered"></ol>
               </div>
             </div></div>
           </div>
