@@ -20,7 +20,7 @@ document.getElementById("btn-triangle-calculate").addEventListener("click",funct
     const triangleArea=( 0.5* inputTriangleB*inputTriangleH) .toFixed(2);
     
     const AreaResultField=getInputId("area-result-field");
-    if( triangleArea<0   ){
+    if( triangleArea<=0  || typeof inputTriangleB ===NaN || typeof inputTriangleH ===NaN ){
         alert("plz type a valid number");
     }
     else{ let li=document.createElement("li");
@@ -46,7 +46,7 @@ document.getElementById("btn-rectangle-calculate").addEventListener("click",func
     const RectangleArea= (inputRectangleW*inputRectangleL).toFixed(2);
     
    const  areaResultField=getInputId("area-result-field");
-    if(RectangleArea<0 ){
+    if(RectangleArea<=0 || typeof inputRectangleW ===NaN || typeof inputRectangleL ===NaN){
         alert("plz type a valid number");
     }
     else{ let li=document.createElement("li");
